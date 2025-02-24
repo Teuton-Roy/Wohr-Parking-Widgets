@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wohr Parking Systems</title>
+    <link rel="icon" type="image/x-icon" href="/Barcode_Redirection_Panel/app/image.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-header">
+            <div>
+                <h1 class="title">Service Request</h1>
+                <p style="color: #666; margin-top: 5px;">Wohr Parking Systems</p>
+            </div>
+            <div class="logo">WOHR</div>
+        </div>
+
+        <form id="serviceForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="customerId">Customer ID</label>
+                    <input type="text" id="customerId" name="customerId" required>
+                    <div class="error">Please enter a valid Customer ID</div>
+                </div>
+                <div class="form-group">
+                    <label for="psNumber">PS Number</label>
+                    <input type="text" id="psNumber" name="psNumber" required>
+                    <div class="error">Please enter a valid PS Number</div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="customerName">Customer Name</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                    <div class="error">Please enter your name</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error">Please enter a valid email address</div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Customer Phone</label>
+                    <div class="phone-input">
+                        <input type="text" class="country-code" id="countryCode" value="+91" required>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="error">Please enter a valid phone number</div>
+                </div>
+                <div class="form-group">
+                    <label for="requestType">Service Request Type</label>
+                    <select id="requestType" name="requestType" required>
+                        <option value="">-Select-</option>
+                        <option value="maintenance">Routine</option>
+                        <option value="repair">Breakdown</option>
+                        <option value="installation">Inspection</option>
+                    </select>
+                    <div class="error">Please select a request type</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="remark">Request Remark</label>
+                <textarea id="remark" name="remark"></textarea>
+                <div class="error">Please enter your request details</div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="installationDate">Date of Installation</label>
+                    <input type="date" id="installationDate" name="installationDate" required>
+                    <div class="error">Please select a valid date</div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
