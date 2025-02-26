@@ -68,7 +68,7 @@ ZOHO.CREATOR.init().then(function (data) {
                 // Configure Zoho Creator API for submission
                 var submissionConfig = {
                     appName: "barcode", 
-                    formName: "Services", 
+                    formName: "Customer_Request", 
                     data: formData
                 };
 
