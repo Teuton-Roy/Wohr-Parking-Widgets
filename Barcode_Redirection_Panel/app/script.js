@@ -79,11 +79,7 @@ ZOHO.CREATOR.init().then(function (data) {
                     console.log(response);
                     
                     if (response.code == 3000) {
-                        alert("Service Submitted Successfully");
-                        // Hide after 3 seconds
-                        setTimeout(function() {
-                            successMessage.style.display = "none";
-                        }, 3000);
+                        alert("Customer Request Service Submitted Successfully");
 
                         // Reset form
                         document.getElementById("serviceForm").reset();
