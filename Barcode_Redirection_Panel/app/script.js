@@ -76,6 +76,8 @@ ZOHO.CREATOR.init().then(function (data) {
 
                 // Submit the form data using Zoho Creator API
                 ZOHO.CREATOR.API.addRecord(submissionConfig).then(function(response) {
+                    console.log(response);
+                    
                     if (response.code == 3000) {
                         alert("Service Submitted Successfully");
                         // Hide after 3 seconds
